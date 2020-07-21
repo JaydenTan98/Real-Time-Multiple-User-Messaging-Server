@@ -1,0 +1,21 @@
+==17335== Memcheck, a memory error detector
+==17335== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==17335== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
+==17335== Command: ../bl_server test-02-serv
+==17335== 
+==17335== 
+==17335== Process terminating with default action of signal 15 (SIGTERM)
+==17335==    at 0x4F4DD45: unlink (syscall-template.S:78)
+==17335==    by 0x4EB7CF8: remove (remove.c:33)
+==17335==    by 0x108DF5: server_start (server_funcs.c:26)
+==17335==    by 0x108BE7: main (bl_server.c:29)
+Starting server test-02-serv
+==17335== 
+==17335== HEAP SUMMARY:
+==17335==     in use at exit: 0 bytes in 0 blocks
+==17335==   total heap usage: 1 allocs, 1 frees, 8,192 bytes allocated
+==17335== 
+==17335== All heap blocks were freed -- no leaks are possible
+==17335== 
+==17335== For counts of detected and suppressed errors, rerun with: -v
+==17335== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
